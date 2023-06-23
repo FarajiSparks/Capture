@@ -4,21 +4,26 @@ import React from "react";
 //import styled from 'styled-components';
 import {About, Description, Image, Hide} from '../styles';
 
+
+import {motion} from 'framer-motion';
+
 const AboutSection = () =>{
+
+
     return(
         <About>
             <Description>
-                <div className="title"> 
+                <motion.div className="title"> 
                     <Hide>
-                        <h2> I work to make</h2>
+                        <motion.h2> I work to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>your <span>moments</span></h2>
+                        <motion.h2 >your <span>moments</span></motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>come to life</h2>
+                        <motion.h2>come to life</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>Some extra details you'd like to say about yourself
                 </p>
                 <button>Contact me</button>

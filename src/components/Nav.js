@@ -24,7 +24,7 @@ const Nav = () =>{
                     <a onClick={aboutHandler}>About Me</a>
                 </li>
                 <li>
-                    <a onClick={workHandler}>Our Work</a>
+                    <a onClick={workHandler}>My Work</a>
                 </li>
                 <li>
                     <a onClick={contactHandler}>Contact</a>

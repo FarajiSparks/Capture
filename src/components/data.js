@@ -44,14 +44,6 @@ const photos = [
         img: "https://i.ibb.co/N7fLLFc/DSC-0378.jpg"
     },
     {
-        id: 12,
-        img: "https://i.ibb.co/WBxkdSB/DSC-0375.jpg"
-    },
-    {
-        id: 13,
-        img: "https://i.ibb.co/mDR9dZ7/DSC-0835.jpg"
-    },
-    {
         id: 14,
         img: "https://i.ibb.co/NT4wJrz/DSC-0818.jpg"
     },
