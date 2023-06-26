@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 //Animations
 import {motion} from 'framer-motion';
-import {pageAnimation} from '../animation';
 
 const Wave = () => {
   return (

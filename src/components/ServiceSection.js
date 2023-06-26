@@ -9,10 +9,14 @@ import money from '../img/money.svg';
 import styled from "styled-components";
 import {About, Description, Image} from '../styles';
 
+import { useScroll } from "./useScroll";
+import { fade, fadeInSide } from "../animation";
+
 
 const ServiceSection = () =>{
+    const [element, controls] = useScroll();
     return (
-        <Services>
+        <Services variants={fadeInSide} animate={controls} initial="hidden" ref={element}>
             <Description>
                 <h2> High <span>quality</span> service 
                 </h2>

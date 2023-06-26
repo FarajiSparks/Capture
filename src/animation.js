@@ -49,3 +49,13 @@ export const photoAnim = {
         }
     }
 }
+
+export const fadeInSide = {
+    hidden: { opacity:0, 
+                y:100 },
+    show: {
+        opacity: 1, 
+        y:0,
+        transition: {ease:"easeOut", duration: 1}
+    }
+}

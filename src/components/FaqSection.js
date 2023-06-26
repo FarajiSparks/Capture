@@ -1,36 +1,50 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from 'styled-components';
 import {About} from '../styles';
+import Toggle from "./Toggle";
+import {LayoutGroup} from 'framer-motion';
+
+import { useScroll } from "./useScroll";
+import { fadeInSide } from "../animation";
 
 const FaqSection = ()=>{
+
+    const [element, controls] = useScroll();
+   
     return(
-        <Faq>
-            <h2>Any questions? <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How do I start?</h4>
-                <div className="answer">
-                    <p>Contact me and we can begin preserving the present</p>
+        
+        <Faq  variants={fadeInSide} animate={controls} initial="hidden" ref={element}>
+            <h2>Any questions? <span>FAQ</span> </h2>
+            <LayoutGroup>
+                <Toggle title={"How do I start?"}>
+                    <div className="question">
+                        <div className="answer">
+                            <p>Contact me and we can begin preserving the present</p>
+                        </div>
+                    </div>
+                </Toggle>
+                <Toggle title={"Where do you work?"}>
+                <div className="question"> 
+                    <div className="answer">
+                        <p>Currently based in Kingston, Jamaica with transportation across the country</p>
+                    </div>
                 </div>
-            </div>
-            <div className="question">
-                <h4>Where do you work?</h4>
-                <div className="answer">
-                    <p>Currently based in Kingston, Jamaica with transportation across the country</p>
-                </div>
-            </div>
-               <div className="faq-line"></div>
-            <div className="question">
-                <h4>What do your services include?</h4>
-                <div className="answer">
-                    <p>My services include onsite photography with edits available</p>
-                </div>
-            </div>
-            <div className="question">
-                <h4>Are you bald fr?</h4>
-                <div className="answer">
-                    <p>Yes</p>
-                </div>
-            </div>
+                </Toggle>   
+                <Toggle title={"What do your services include?"}>
+                    <div className="question">
+                        <div className="answer">
+                            <p>My services include onsite photography with edits available</p>
+                        </div>
+                    </div>
+                </Toggle>
+                <Toggle title={"Are you bald fr?"}>
+                    <div className="question">
+                        <div className="answer">
+                            <p>Yes</p>
+                        </div>
+                    </div>
+                </Toggle>
+            </LayoutGroup>
         </Faq>
     )
 }
@@ -46,9 +60,8 @@ h2{
     font-weight:lighter;
 }
 
-.answer:after {
+.faq-line {
     display: block;
-    content: '';
     background: #CCCCCC;
     height: 0.2rem;
     margin: 2rem 0;
@@ -56,14 +69,14 @@ h2{
 }
 
 .question{
-    padding:3rem 0rem;
+    padding:1rem 0rem;
     cursor:pointer;
 }
 
 .answer{
-    padding: 2rem 0rem;
+    padding: .1rem 0rem;
     p{
-        padding:1rem 0rem;
+        padding:.1rem 0rem;
     }
 }
 `;   
