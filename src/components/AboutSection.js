@@ -15,7 +15,8 @@ const AboutSection = () =>{
                 <motion.div className="title"> 
                     <Hide>
                         <motion.h2 variants={titleAnim}> I work to make</motion.h2>
-                    </Hide>
+                    </Hide>  
+                    <Wave/>
                     <Hide>
                         <motion.h2 variants={titleAnim}>your <span>moments</span></motion.h2>
                     </Hide>
@@ -29,6 +30,7 @@ const AboutSection = () =>{
                 <Image>
                     <motion.img variants={photoAnim} src="https://i.ibb.co/2d9MN7P/DSC-0339.jpg" alt="brandon center"/>
                 </Image>
+              
             </Description>
         </About>
     );
