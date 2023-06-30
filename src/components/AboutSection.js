@@ -24,7 +24,8 @@ const AboutSection = () =>{
                         <motion.h2 variants={titleAnim}>come to life</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>Some extra details you'd like to say about yourself
+                <motion.p variants={fade}>
+                    If a picture is a thousand words, I'd like to tell your story
                 </motion.p>
                 <motion.button variants={fade}>Contact me</motion.button>
                 <Image>

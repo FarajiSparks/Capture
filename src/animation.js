@@ -59,3 +59,5 @@ export const fadeInSide = {
         transition: {ease:"easeOut", duration: 1}
     }
 }
+
+

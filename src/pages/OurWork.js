@@ -43,6 +43,7 @@ const OurWork = () => {
       <img src={tempImgSrc} alt="open viewed img" />
       <CloseIcon onClick={()=>setOpenModal(false)}/>
     </div>
+  
     <GalleryWrap exit="exit" variants={pageAnimation} initial="hidden" animate="show">
         {data.map((item) =>{
           return (
@@ -117,7 +118,7 @@ const Pics = styled.div`
         object-fit:cover;
       }
   }
-
 `
+
 
 export default OurWork

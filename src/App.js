@@ -20,7 +20,9 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav/>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" onExitComplete={()=>{
+        window.scrollTo(0,0);
+      }}>
         <Routes location={location} key={location.pathname}>
           <Route path ="/" element={<AboutUs/>}/>
           <Route path ="/work" element={<OurWork/>}/>

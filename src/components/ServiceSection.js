@@ -10,7 +10,7 @@ import styled from "styled-components";
 import {About, Description, Image} from '../styles';
 
 import { useScroll } from "./useScroll";
-import { fade, fadeInSide } from "../animation";
+import { fadeInSide } from "../animation";
 
 
 const ServiceSection = () =>{
@@ -65,11 +65,16 @@ h2{
 p{
     padding:2rem 0rem 4rem 0rem;
 }
+
 `;
 
 const Cards = styled.div`
 display:flex;
 flex-wrap:wrap;
+@media (max-width:1300px){
+     justify-content:space-between;
+    }
+
 `;
 
 const Card = styled.div`
