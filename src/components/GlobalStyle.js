@@ -58,6 +58,8 @@ span{
 
 a{
     font-size:1.1rem;
+    text-decoration:none;
+    color:#23d997;
     }
 
 p{
@@ -65,8 +67,6 @@ p{
     color: #ccc; 
     font-size:1rem;
     line-height:150%;
-    width:70%;
- 
     }
 
 .model{

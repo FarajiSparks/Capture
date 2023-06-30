@@ -11,7 +11,9 @@ import OurWork from './pages/OurWork';
 import {Route, Routes, useLocation} from 'react-router-dom';
 
 //Animation
-import {AnimatePresence} from "framer-motion"
+import {AnimatePresence} from "framer-motion";
+
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -29,6 +31,7 @@ function App() {
           <Route path ="/contact" element={<ContactUs/>}/>
         </Routes>
       </AnimatePresence>
+      <Footer/>
     </div>
   );
 }
