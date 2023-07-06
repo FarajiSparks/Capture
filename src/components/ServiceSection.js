@@ -30,25 +30,25 @@ const ServiceSection = () =>{
                     </Card>
                     <Card>
                         <div className="icon">
+                            <img src={money} alt="money"/>
+                            <h3>Affordable</h3>
+                        </div>
+                        <p>Nah nigga you expected some lorem epsum bs? </p>
+                    </Card>
+                    <Card>
+                        <div className="icon">
                             <img src={teamwork} alt="together"/>
-                            <h3>Communicative</h3>
+                            <h3>Personal</h3>
                         </div>
                         <p>Nah nigga you expected some lorem epsum bs? </p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={diaphragm} alt="something"/>
-                            <h3>Diaphragm</h3>
+                            <h3>Systematic</h3>
                         </div>
                         <p>Nah nigga you expected some lorem epsum bs? </p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={money} alt="money"/>
-                            <h3>Affordable</h3>
-                        </div>
-                        <p>Nah nigga you expected some lorem epsum bs? </p>
-                    </Card>
+                    </Card>                  
                 </Cards>
             </Description> 
             <Image>
@@ -65,7 +65,6 @@ h2{
 p{
     padding:2rem 0rem 4rem 0rem;
 }
-
 `;
 
 const Cards = styled.div`
@@ -73,6 +72,13 @@ display:flex;
 flex-wrap:wrap;
 @media (max-width:1300px){
      justify-content:space-between;
+    }
+@media (max-width:900px){
+     justify-content:space-between;
+     img{
+        height:40px;
+        width:40px;
+     }
     }
 
 `;

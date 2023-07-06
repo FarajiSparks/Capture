@@ -14,6 +14,12 @@ html{
     }
     @media (max-width:800px){
         font-size:55%;
+        img{
+            height:20%;
+            width:100vw;
+            object-fit:cover;
+            
+        }
     }
 }
 
@@ -90,6 +96,7 @@ p{
     visibility:visible;
     opacity:1;
     transform:scale(1);
+    z-index:14;
 }
 
 .model.open svg{
@@ -102,6 +109,10 @@ p{
     background-color:rgba(0,0,0,0.4);
     color:white;
     cursor:pointer;
+    @media (max-width:800px){
+        width:6rem;
+        height:6rem;
+    }
 }
 
 .model img{
